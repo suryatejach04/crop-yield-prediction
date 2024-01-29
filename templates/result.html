@@ -1,0 +1,22 @@
+<!-- result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Prediction Result</h1>
+        </div>
+        <div class="result-container">
+            <p>Required Fertilizer per Hectare: {{ fertilizer }} kgs</p>
+            <p>Required Pesticide per Hectare: {{ pesticide }} kgs</p>
+            <p>Expected Yield per Hectare: {{ pred_yield }} metric tons</p>
+        </div>
+    </div>
+</body>
+</html>
